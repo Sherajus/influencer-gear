@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,700&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+    
+}
+.d-flex{
+    display: flex;
+}
+.container{
+   width: 80%;
+   height: auto;
+   margin: 20px auto;
+}
+
+/* for  header */
+.menubar{
+   display: flex;
+}
+.brand{
+    width: 50%;
+}
+.option ul li{
+ list-style-type: none;
+ display: inline-block;
+ margin:14px 18px;
+}
+
+.option ul li a{
+    text-decoration: none;
+    color: #3A3A3A;
+}
+
+
+/* banner */
+
+.c-font{
+    font-weight: 700 italic;
+    font-size: 40px;
+    color:#3A3A3A
+
+}
+h3{
+    color:#3A3A3A
+}
+
+
+.banner{
+    display: flex;
+}
+
+.banner-moto{
+    width: 50%;
+}
+
+.c-btn{
+    border: none;
+    background: #E02C6D;
+    color: beige;
+    padding: 15px 25px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-family:'Poppins' ;
+    transition: .4s linear;
+}
+
+
+.c-btn:hover{
+    transform: rotatey(25deg);
+    box-shadow: 0 15px 15px #ffa8c2;
+}
+
+/* companies */
+.companies{
+    display: flex;
+   
+    
+}
+.companies img{
+    
+    margin-left: 40px;
+    padding: 19px;
+}
+
+/* collection */
+.collection-txt{
+    color:#3A3A3A ;
+    text-align: center;
+}
+
+.collection-box{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 30px;
+}
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-body{
+    margin:15px;
+
+}
+
+.card-body img{
+    width: 100%;
+}
+
+.product-title{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.product-price{
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.rating{
+    margin-left: 10px;
+}
+
+.star i {
+    color: #f5ac0f;
+}
+
+.more-btn{
+   position: relative;
+   left: 88%;
+   margin-top: 20px;
+   border: none;
+   color: #E02C6D;
+   padding: 18px 25px;
+   font-size: larger;
+   cursor: pointer;
+   border-radius: 10px;
+   font-family:'Poppins' ;
+   background-color:white;
+    
+}
+
+/* clients */
+
+.clients{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 15px;
+}
+
+
+
+/* footer */
+footer{
+    height: auto;
+    background-color: #0A0826;
+}
+
+.social{
+    text-align: center;
+}
+
+.social i{
+    font-size: 25px;
+    padding: 10px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+
+
+/* meadia quieries */
+
+@media (min-width: 641px) and (max-width: 1007px){
+
+    .collection-box{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 30px;
+    }
+
+    .companies{
+        display: none;
+    }
+
+    .more-btn{
+        left:0%
+    }
+
+    .clients{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 15px;
+    }
+
+
+}
+
+
+
+@media (min-width: 300px) and (max-width: 640px) {
+    .brand{
+        width: 100%;
+    }
+    .brand h2{
+        text-align: center;
+    }
+    .option{
+        display:none;
+    }
+
+    /* for banner */
+
+    .banner{
+        flex-direction: column;
+    }
+
+    .banner-moto{
+        width: 100%;
+        order: 1;
+    }
+
+    .banner-logo{
+        margin-right: 20px;
+    }
+
+    .banner-logo img{
+        width: 320px;
+    }
+
+    .c-font{
+        font-weight: 700 italic;
+        font-size: 25px;
+        text-align: center;
+        color:#3A3A3A
+    
+    }
+
+    .moto-text{
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .c-btn{
+       margin-left: 35%;
+       margin-bottom: 20px;
+    }
+
+    .companies{
+        display: none;
+    }
+
+    .collection-box{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 30px;
+    }
+
+    .clients{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 15px;
+    }
+
+    .more-btn{
+        left:55%
+    }
+
+
+
+
+
+
+    
+  }
